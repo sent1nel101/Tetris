@@ -1,0 +1,89 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html{
+    background: black;
+}
+body{
+    font-variant: small-caps;
+    width: 480px;
+    height: 600px;
+    background-image: url("tetrisBG.jpg");
+    background-size: cover;
+    background-repeat:space;
+    border-radius: 15px;
+    color:antiquewhite;
+    margin: 0 auto;
+}
+/* .grid{
+    margin: 0 auto;
+} */
+.header{
+    text-align: center;
+}
+#scoreTag{
+    position:relative;
+    padding-top:1rem;
+}
+.taken{
+    border: none;
+}
+.container{
+    display:flex;
+    padding:1rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.grid{
+    width: 200px;
+    height: 400px;
+    display:flex;
+    background: hsla(0, 0%, 1%, 0.8);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.miniGrid{
+    width: 80px;
+    height: 80px;
+    display:flex;
+    flex-wrap:wrap;
+    background:hsla(0, 0%, 1%, 0.6);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.miniGrid div{
+    height:20px;
+    width:20px;
+    border:1px dashed rgba(51, 51, 51, 0.055);
+    border-radius: 5px;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+    border:1px dashed rgba(51, 51, 51, 0.055);
+    border-radius: 5px;
+}
+.tetromino{
+    background:blue;
+}
+.buttonContainer{
+    display:flex;
+}
+#startBtn{
+    margin: 0 auto;
+    color:#333;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+}
+button:hover{
+    position:relative;
+    top:1px;
+}
+footer{
+    text-align: center;
+    font-size:10px;
+    color:antiquewhite;
+}
